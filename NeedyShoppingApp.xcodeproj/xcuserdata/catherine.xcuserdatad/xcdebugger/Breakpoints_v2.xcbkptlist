@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "75F21F36-9E6D-4CF0-BEE9-370CD52033A7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B627693E-25D9-4F9A-A9DA-E4746DB61A7D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeedyShoppingApp/Modules/Home/Presentation/View/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B627693E-25D9-4F9A-A9DA-E4746DB61A7D - 354424cc26eb77e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeedyShoppingApp.HomeViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "NeedyShoppingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catherine/Desktop/NeedyShoppingApp/NeedyShoppingApp/Modules/Home/Presentation/View/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "103"
+                  endingLineNumber = "103"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "B627693E-25D9-4F9A-A9DA-E4746DB61A7D - 354424cc26eb77dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NeedyShoppingApp.HomeViewController.tableView(_: __C.UITableView, didSelectRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "NeedyShoppingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catherine/Desktop/NeedyShoppingApp/NeedyShoppingApp/Modules/Home/Presentation/View/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "155">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9200AFE4-6BC7-44CB-818C-AE19FF755E3A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NeedyShoppingAppTests/Unit Tests/Product/ProductRepositoryTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "testFetchProductsFailure()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9200AFE4-6BC7-44CB-818C-AE19FF755E3A - bfdcb91580111688"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;NeedyShoppingApp.ProductModel&gt;, Swift.Error&gt;) -&gt; () in NeedyShoppingAppTests.ProductRepositoryTests.testFetchProductsFailure() -&gt; ()"
+                  moduleName = "NeedyShoppingAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catherine/Desktop/NeedyShoppingApp/NeedyShoppingAppTests/Unit%20Tests/Product/ProductRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "87">
+               </Location>
+               <Location
+                  uuid = "9200AFE4-6BC7-44CB-818C-AE19FF755E3A - bfdcb91580111688"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;NeedyShoppingApp.ProductModel&gt;, Swift.Error&gt;) -&gt; () in NeedyShoppingAppTests.ProductRepositoryTests.testFetchProductsFailure() -&gt; ()"
+                  moduleName = "NeedyShoppingAppTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/catherine/Desktop/NeedyShoppingApp/NeedyShoppingAppTests/Unit%20Tests/Product/ProductRepositoryTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

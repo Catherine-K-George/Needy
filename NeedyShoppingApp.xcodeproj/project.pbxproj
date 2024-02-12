@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65FD40212B7A1261006D62A5 /* DataModelMappingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD40202B7A1261006D62A5 /* DataModelMappingProtocol.swift */; };
 		C105B11D2B72B87500F0BB0F /* HomeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B11C2B72B87500F0BB0F /* HomeServiceTests.swift */; };
 		C105B11F2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B11E2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift */; };
 		C105B1212B72C23000F0BB0F /* MockProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B1202B72C23000F0BB0F /* MockProductDetailViewModel.swift */; };
@@ -162,6 +163,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		65FD40202B7A1261006D62A5 /* DataModelMappingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelMappingProtocol.swift; sourceTree = "<group>"; };
 		C105B11C2B72B87500F0BB0F /* HomeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTests.swift; sourceTree = "<group>"; };
 		C105B11E2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavouriteProductsRepository.swift; sourceTree = "<group>"; };
 		C105B1202B72C23000F0BB0F /* MockProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductDetailViewModel.swift; sourceTree = "<group>"; };
@@ -642,6 +644,7 @@
 				C10883442B55AD3C0006BED1 /* URLSessionProtocol.swift */,
 				C135D63D2B4D5079003D0D0E /* StoryboardInstantiatable.swift */,
 				C1AE17CA2B566C5100E95A36 /* ApplicationProtocol.swift */,
+				65FD40202B7A1261006D62A5 /* DataModelMappingProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1222,6 +1225,7 @@
 				C190878C2B4D00F100FBA493 /* LoginViewController.swift in Sources */,
 				C141DABF2B4D6A1D00DFE927 /* ProductDetailViewModel.swift in Sources */,
 				C1E2F85B2B7234B40034960E /* LoginService.swift in Sources */,
+				65FD40212B7A1261006D62A5 /* DataModelMappingProtocol.swift in Sources */,
 				C1E2F8622B724E6C0034960E /* FetchCategoriesUseCaseProtocol.swift in Sources */,
 				C10C9A642B554A7300F1F7C5 /* CategoriesRepository.swift in Sources */,
 				C1B81BFB2B57A2EF00A5980B /* FavouritesSwiftUIView.swift in Sources */,

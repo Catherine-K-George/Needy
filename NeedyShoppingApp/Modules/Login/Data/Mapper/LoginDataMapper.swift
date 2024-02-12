@@ -7,20 +7,31 @@
 
 import Foundation
 
-struct LoginDataModelMapper {
-    static func mapToDataRequestModel(from domainModel: LoginRequestDomainModel) -> LoginRequest {
+struct LoginRequestModelMapper: DataModelMappingProtocol {
+    
+    typealias DomainModel = LoginRequestDomainModel
+    typealias DataModel = LoginRequest
+    
+    static func mapToDataModel(from domainModel: LoginRequestDomainModel) -> LoginRequest {
         return LoginRequest(username: domainModel.username, password: domainModel.password)
     }
     
-    static func mapToDomainRequestModel(from dataModel: LoginRequest) -> LoginRequestDomainModel {
+    static func mapToDomainModel(from dataModel: LoginRequest) -> LoginRequestDomainModel {
         return LoginRequestDomainModel(username: dataModel.username, password: dataModel.password)
     }
+}
+
+struct LoginResponseModelMapper: DataModelMappingProtocol {
     
-    static func mapToDataResponseModel(from domainModel: LoginResponseDomainModel) -> LoginResponse {
+    typealias DomainModel = LoginResponseDomainModel
+    typealias DataModel = LoginResponse
+    
+    static func mapToDataModel(from domainModel: LoginResponseDomainModel) -> LoginResponse {
         return LoginResponse(token: domainModel.token)
     }
     
-    static func mapToDomainResponseModel(from dataModel: LoginResponse) -> LoginResponseDomainModel {
+    static func mapToDomainModel(from dataModel: LoginResponse) -> LoginResponseDomainModel {
         return LoginResponseDomainModel(token: dataModel.token)
     }
+
 }

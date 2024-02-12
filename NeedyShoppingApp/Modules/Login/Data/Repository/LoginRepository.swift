@@ -15,12 +15,12 @@ final class LoginRepository: LoginRepositoryProtocol {
     }
     
     func login(_ domainModel: LoginRequestDomainModel, completion: @escaping (Result<LoginResponseDomainModel, Error>) -> Void) {
-        let loginDataModel = LoginDataModelMapper.mapToDataRequestModel(from: domainModel)
-        
+        let loginDataModel = LoginRequestModelMapper.mapToDataModel(from: domainModel)
+
         service.login(request: loginDataModel) { result in
             switch result {
             case .success(let response):
-                let responseDomainModel = LoginDataModelMapper.mapToDomainResponseModel(from: response)
+                let responseDomainModel = LoginResponseModelMapper.mapToDomainModel(from: response)
                 completion(.success(responseDomainModel))
             case .failure(let error):
                 completion(.failure(error))

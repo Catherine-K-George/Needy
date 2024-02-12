@@ -73,19 +73,19 @@ final class LoginRepositoryTests: XCTestCase {
     
     func testLoginDataMappingToDomainRequest() {
         let requestModel = NeedyShoppingApp.LoginRequest(username: "testUser", password: "testPassword")
-        let domainModel = LoginDataModelMapper.mapToDomainRequestModel(from: requestModel)
+        let domainModel = LoginRequestModelMapper.mapToDomainModel(from: requestModel)
         XCTAssertTrue(domainModel is LoginRequestDomainModel)
     }
     
     func testLoginDomainToDataResponseMapping() {
         let responseModel = LoginResponseDomainModel(token: "token")
-        let dataResponseModel = LoginDataModelMapper.mapToDataResponseModel(from: responseModel)
+        let dataResponseModel = LoginResponseModelMapper.mapToDataModel(from: responseModel)
         XCTAssert(dataResponseModel is NeedyShoppingApp.LoginResponse)
     }
     
     func testLoginDataMappingToDomainResponse() {
         let responseModel = NeedyShoppingApp.LoginResponse(token: "token")
-        let domainResponse = LoginDataModelMapper.mapToDomainResponseModel(from: responseModel)
+        let domainResponse = LoginResponseModelMapper.mapToDomainModel(from: responseModel)
         XCTAssert(domainResponse is LoginResponseDomainModel)
     }
     

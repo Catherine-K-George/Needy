@@ -14,7 +14,7 @@ final class FetchProductsUseCase: FetchProductsUseCaseProtocol {
         self.repository = repository
     }
 
-    func fetchProducts(category: String, completion: @escaping (Result<[ProductModel], Error>) -> Void) {
+    func fetchProducts(category: String, completion: @escaping (Result<[ProductDomainModel], Error>) -> Void) {
         repository.fetchProducts(category: category, completion: completion)
     }
 }

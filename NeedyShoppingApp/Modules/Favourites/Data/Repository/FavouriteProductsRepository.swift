@@ -9,14 +9,24 @@ import Foundation
 
 final class FavouriteProductsRepository: FavouriteProductsRepositoryProtocol {
     private let service: FavouriteProductsServiceProtocol
+    private let mapper: ProductDataMapper
 
-    init(service: FavouriteProductsServiceProtocol) {
+    init(service: FavouriteProductsServiceProtocol, mapper: ProductDataMapper) {
         self.service = service
+        self.mapper = mapper
     }
 
-    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductModel], Error>) -> Void) {
-        service.fetchFavouriteProducts { result in
-            completion(result)
+    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductDomainModel], Error>) -> Void) {
+        service.fetchFavouriteProducts { [weak self] result in
+            switch result {
+            case .success(let response):
+                let products = response.compactMap { dataModel in
+                    return self?.mapper.mapToDomainModel(from: dataModel)
+                }
+                completion(.success(products))
+            case .failure(let error):
+                completion(.failure(error))
+            }
         }
     }
 }

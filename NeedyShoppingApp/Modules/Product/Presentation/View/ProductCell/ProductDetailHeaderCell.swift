@@ -17,7 +17,7 @@ class ProductDetailHeaderCell: UITableViewCell {
     
     // @IBAction func buyNowButtonTapped(_ sender: UIButton) { }
     
-    var product: ProductModel? {
+    var product: ProductDomainModel? {
         didSet {
             guard let product = product else { return }
             headerLabel?.text = product.title

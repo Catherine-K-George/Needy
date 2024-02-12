@@ -64,7 +64,8 @@ extension HomeViewController {
         let networkManager = NetworkManager.shared
         let serviceConfiguration = ServiceConfiguration(endpoint: NetworkConstants.Endpoints.products)
         let productService = ProductService(networkManager: networkManager, serviceConfiguration: serviceConfiguration)
-        let productRepository = ProductRepository(service: productService)
+        let mapper = ProductDataMapper()
+        let productRepository = ProductRepository(service: productService, mapper: mapper)
         let productUseCase = FetchProductsUseCase(repository: productRepository)
         let productViewModel = ProductViewModel(category: category, fetchProductsUseCase: productUseCase)
         let productViewController = ProductViewController.instantiate { coder in

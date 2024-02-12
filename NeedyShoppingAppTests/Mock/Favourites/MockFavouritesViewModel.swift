@@ -10,11 +10,11 @@ import Foundation
 
 class MockFavouriteProductsViewModel: FavouriteViewModelProtocol {
     var jsonLoadCalled = false
-    var mockedResult: Result<[ProductModel], Error>?
+    var mockedResult: Result<[ProductDomainModel], Error>?
 
-    var products: [ProductModel]
+    var products: [ProductDomainModel]
     
-    init(_ products: [ProductModel]) {
+    init(_ products: [ProductDomainModel]) {
         self.products = products
     }
     
@@ -22,7 +22,7 @@ class MockFavouriteProductsViewModel: FavouriteViewModelProtocol {
         products.count
     }
     
-    func product(for indexPath: IndexPath) -> NeedyShoppingApp.ProductModel {
+    func product(for indexPath: IndexPath) -> NeedyShoppingApp.ProductDomainModel {
         return products[indexPath.row]
     }
     

@@ -14,9 +14,9 @@ protocol ProductDetailViewModelProtocol {
 }
 
 final class ProductDetailViewModel {
-    var product: ProductModel
+    var product: ProductDomainModel
     
-    init(_ product: ProductModel) {
+    init(_ product: ProductDomainModel) {
         self.product = product
     }
     

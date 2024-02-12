@@ -9,7 +9,7 @@ import SwiftUI
 import Kingfisher
 
 struct ProductListItemView: View {
-    var product: ProductModel
+    var product: ProductDomainModel
 
     var body: some View {
         HStack(spacing: 10) {

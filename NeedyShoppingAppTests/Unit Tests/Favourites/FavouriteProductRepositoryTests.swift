@@ -11,10 +11,11 @@ import XCTest
 final class FavouriteProductRepositoryTests: XCTestCase {
     var favouriteProductRepository: FavouriteProductsRepository?
     var service = MockFavouriteProductsService()
+    let mapper = ProductDataMapper()
     
     override func setUp() {
         super.setUp()
-        favouriteProductRepository = FavouriteProductsRepository(service: service)
+        favouriteProductRepository = FavouriteProductsRepository(service: service, mapper: mapper)
     }
 
     func testInvalidURLFetchCategory() {

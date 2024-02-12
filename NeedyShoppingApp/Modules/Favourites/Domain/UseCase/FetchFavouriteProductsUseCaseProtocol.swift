@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FetchFavouriteProductsUseCaseProtocol {
-    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductModel], Error>) -> Void)
+    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductDomainModel], Error>) -> Void)
 }

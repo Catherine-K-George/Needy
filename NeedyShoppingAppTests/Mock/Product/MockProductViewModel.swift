@@ -11,10 +11,10 @@ import Foundation
 class MockProductViewModel: ProductViewModelProtocol {
     var fetchProductsCalled = false
     var selectedCategory: String = "electronics"
-    var products: [ProductModel]
-    var mockedResult: Result<[ProductModel], Error>?
+    var products: [ProductDomainModel]
+    var mockedResult: Result<[ProductDomainModel], Error>?
 
-    init(_ products: [ProductModel]) {
+    init(_ products: [ProductDomainModel]) {
         self.products = products
     }
 
@@ -22,11 +22,11 @@ class MockProductViewModel: ProductViewModelProtocol {
         products.count
     }
     
-    func product(for indexPath: IndexPath) -> NeedyShoppingApp.ProductModel {
+    func product(for indexPath: IndexPath) -> NeedyShoppingApp.ProductDomainModel {
         products[indexPath.row]
     }
     
-    func fetchProducts(completion: @escaping (Result<[ProductModel], Error>) -> Void) {
+    func fetchProducts(completion: @escaping (Result<[ProductDomainModel], Error>) -> Void) {
         fetchProductsCalled = true
         if let mockedResult = mockedResult {
             completion(mockedResult)

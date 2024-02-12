@@ -8,15 +8,15 @@
 import Foundation
 
 protocol FavouriteViewModelProtocol {
-    var products: [ProductModel] { get set }
+    var products: [ProductDomainModel] { get set }
     func numberOfItems() -> Int
-    func product(for indexPath: IndexPath) -> ProductModel
+    func product(for indexPath: IndexPath) -> ProductDomainModel
     func fetchFavouriteProducts()
 }
 
 final class FavouritesViewModel: ObservableObject {
     
-    @Published var products: [ProductModel] = []
+    @Published var products: [ProductDomainModel] = []
     private let fetchFavouritesUseCase: FetchFavouriteProductsUseCaseProtocol
     
     init(fetchFavouritesUseCase: FetchFavouriteProductsUseCaseProtocol) {
@@ -29,7 +29,7 @@ extension FavouritesViewModel: FavouriteViewModelProtocol {
         return products.count
     }
     
-    func product(for indexPath: IndexPath) -> ProductModel {
+    func product(for indexPath: IndexPath) -> ProductDomainModel {
         return products[indexPath.item]
     }
     

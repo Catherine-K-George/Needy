@@ -40,7 +40,7 @@ class ProductViewController: UIViewController, StoryboardInstantiatable {
 // MARK: - Private methods
 extension ProductViewController {
     
-    private func createProductDetailViewController(for product: ProductModel) -> UIViewController {
+    private func createProductDetailViewController(for product: ProductDomainModel) -> UIViewController {
         let productDetailViewModel = ProductDetailViewModel(product)
         let productDetailViewController = ProductDetailViewController.instantiate { coder in
             ProductDetailViewController(coder: coder, productDetailViewModel: productDetailViewModel)

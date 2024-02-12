@@ -14,7 +14,7 @@ final class FavouriteProductsUseCase: FetchFavouriteProductsUseCaseProtocol {
         self.repository = repository
     }
 
-    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductModel], Error>) -> Void) {
+    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductDomainModel], Error>) -> Void) {
         repository.fetchFavouriteProducts(completion)
     }
 }

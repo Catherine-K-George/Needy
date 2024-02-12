@@ -41,7 +41,8 @@ class TabbarViewController: UITabBarController, StoryboardInstantiatable {
         let networkManager = NetworkManager.shared
         let serviceConfiguration = ServiceConfiguration(endpoint: NetworkConstants.Endpoints.products)
         let favouriteService = FavouriteProductsService(networkManager: networkManager)
-        let favouriteRepository = FavouriteProductsRepository(service: favouriteService)
+        let mapper = ProductDataMapper()
+        let favouriteRepository = FavouriteProductsRepository(service: favouriteService, mapper: mapper)
         let favouritesUseCase = FavouriteProductsUseCase(repository: favouriteRepository)
         let favouriteViewModel = FavouritesViewModel(fetchFavouritesUseCase: favouritesUseCase)
         let favouriteViewController = FavouritesViewController.instantiate { coder in

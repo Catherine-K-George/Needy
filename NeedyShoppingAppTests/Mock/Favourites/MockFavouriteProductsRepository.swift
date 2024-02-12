@@ -9,10 +9,10 @@ import XCTest
 @testable import NeedyShoppingApp
 
 final class MockFavouriteProductsRepository: FavouriteProductsRepositoryProtocol {
-    var mockedProducts: [ProductModel]?
+    var mockedProducts: [ProductDomainModel]?
     var mockedError: Error?
 
-    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductModel], Error>) -> Void) {
+    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductDomainModel], Error>) -> Void) {
         if let mockedError = mockedError {
             completion(.failure(mockedError))
         } else if let mockedProducts = mockedProducts {

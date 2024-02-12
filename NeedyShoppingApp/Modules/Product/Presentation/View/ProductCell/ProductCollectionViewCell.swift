@@ -15,7 +15,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
     
-    func configureProductCell(_ product: ProductModel?) {
+    func configureProductCell(_ product: ProductDomainModel?) {
         guard let product = product else { return }
         productLabel.text = product.title
         productPriceLabel.text =  String(format: StringConstants.priceWithDollar, product.price)

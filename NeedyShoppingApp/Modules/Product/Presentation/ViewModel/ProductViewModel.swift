@@ -10,13 +10,13 @@ import Foundation
 protocol ProductViewModelProtocol {
     var selectedCategory: String { get set }
     func numberOfItems() -> Int
-    func product(for indexPath: IndexPath) -> ProductModel
-    func fetchProducts(completion: @escaping (Result<[ProductModel], Error>) -> Void)
+    func product(for indexPath: IndexPath) -> ProductDomainModel
+    func fetchProducts(completion: @escaping (Result<[ProductDomainModel], Error>) -> Void)
 }
 
 final class ProductViewModel: ObservableObject {
     @Published var selectedCategory = ""
-    var products: [ProductModel] = []
+    var products: [ProductDomainModel] = []
     
     private let fetchProductsUseCase: FetchProductsUseCaseProtocol
     
@@ -32,11 +32,11 @@ extension ProductViewModel: ProductViewModelProtocol {
         return products.count
     }
 
-    func product(for indexPath: IndexPath) -> ProductModel {
+    func product(for indexPath: IndexPath) -> ProductDomainModel {
         return products[indexPath.item]
     }
 
-    func fetchProducts(completion: @escaping (Result<[ProductModel], Error>) -> Void) {
+    func fetchProducts(completion: @escaping (Result<[ProductDomainModel], Error>) -> Void) {
         fetchProductsUseCase.fetchProducts(category: selectedCategory) { [weak self] result in
             switch result {
             case .success(let productResponse):

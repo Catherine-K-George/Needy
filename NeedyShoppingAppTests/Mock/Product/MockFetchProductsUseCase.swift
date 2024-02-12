@@ -9,10 +9,10 @@ import XCTest
 @testable import NeedyShoppingApp
 
 final class MockFetchProductsUseCase: FetchProductsUseCaseProtocol {
-    var mockedProducts: [ProductModel]?
+    var mockedProducts: [ProductDomainModel]?
     var mockedError: Error?
 
-    func fetchProducts(category: String, completion: @escaping (Result<[ProductModel], Error>) -> Void) {
+    func fetchProducts(category: String, completion: @escaping (Result<[ProductDomainModel], Error>) -> Void) {
         if let products = mockedProducts {
             completion(.success(products))
         } else if let error = mockedError {
@@ -24,12 +24,12 @@ final class MockFetchProductsUseCase: FetchProductsUseCaseProtocol {
 }
 
 final class MockFetchFavouriteProductsUseCase: FetchFavouriteProductsUseCaseProtocol {
-    var mockedProducts: [ProductModel]?
+    var mockedProducts: [ProductDomainModel]?
     var mockedError: Error?
     var isFetchFavouriteProductsCalled = false
     var mockErrorCalled = false
 
-    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductModel], Error>) -> Void) {
+    func fetchFavouriteProducts(_ completion: @escaping (Result<[ProductDomainModel], Error>) -> Void) {
         if let products = mockedProducts {
             isFetchFavouriteProductsCalled = true
             completion(.success(products))

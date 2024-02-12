@@ -12,7 +12,7 @@ class ProductDetailDescriptionCell: UITableViewCell {
     @IBOutlet weak var favouriteButton: UIButton?
     @IBOutlet weak var descriptionLabel: UILabel?
     
-    var product: ProductModel? {
+    var product: ProductDomainModel? {
         didSet {
             guard let product = product else { return }
             descriptionLabel?.text = product.description

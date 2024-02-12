@@ -9,7 +9,7 @@ import UIKit
 import SwiftUI
 
 struct ProductDetailUIKitView: UIViewControllerRepresentable {
-    let product: ProductModel
+    let product: ProductDomainModel
 
     func makeUIViewController(context: Context) -> UIViewController {
         let productDetailViewController = createProductDetailViewController(for: product)
@@ -20,7 +20,7 @@ struct ProductDetailUIKitView: UIViewControllerRepresentable {
         // Update any relevant UI elements or data if needed
     }
     
-    private func createProductDetailViewController(for product: ProductModel) -> UIViewController {
+    private func createProductDetailViewController(for product: ProductDomainModel) -> UIViewController {
         let productDetailViewModel = ProductDetailViewModel(product)
         let productDetailViewController = ProductDetailViewController.instantiate { coder in
             ProductDetailViewController(coder: coder, productDetailViewModel: productDetailViewModel)

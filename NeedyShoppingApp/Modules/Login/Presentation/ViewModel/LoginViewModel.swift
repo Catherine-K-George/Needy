@@ -27,7 +27,7 @@ extension LoginViewModel: LoginViewModelProtocol {
         loginUseCase.login(domainModel) { [weak self] result in
             switch result {
             case .success(let response):
-                self?.token = response.token
+                self?.token = response?.token
                 completion(true)
             case .failure(let error):
                 print("Login failed with error: \(error)")

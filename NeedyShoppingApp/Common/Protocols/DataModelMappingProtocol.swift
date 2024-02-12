@@ -11,6 +11,6 @@ protocol DataModelMappingProtocol {
     associatedtype DomainModel
     associatedtype DataModel
 
-    static func mapToDataModel(from domainModel: DomainModel) -> DataModel
-    static func mapToDomainModel(from dataModel: DataModel) -> DomainModel
+    func mapToDataModel(from domainModel: DomainModel) -> DataModel
+    func mapToDomainModel(from dataModel: DataModel) -> DomainModel
 }

@@ -8,5 +8,5 @@
 import Foundation
 
 protocol LoginRepositoryProtocol {
-    func login(_ domainModel: LoginRequestDomainModel, completion: @escaping (Result<LoginResponseDomainModel, Error>) -> Void)
+    func login(_ domainModel: LoginRequestDomainModel, completion: @escaping (Result<LoginResponseDomainModel?, Error>) -> Void)
 }

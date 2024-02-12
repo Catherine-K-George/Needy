@@ -20,7 +20,9 @@ final class LoginViewcontrollerSnapShotTests: SnapshotTestCase {
         let networkManager = NetworkManager.shared
         let serviceConfiguration = ServiceConfiguration(endpoint: NetworkConstants.Endpoints.login)
         let loginService = LoginService(networkManager: networkManager, serviceConfiguration: serviceConfiguration)
-        let loginRepository = LoginRepository(service: loginService)
+        let requestMapper = LoginRequestModelMapper()
+        let responseMapper = LoginResponseModelMapper()
+        let loginRepository = LoginRepository(service: loginService, requestMapper: requestMapper, responseMapper: responseMapper)
         let loginUseCase = LoginUseCase(repository: loginRepository)
         let loginViewModel = LoginViewModel(loginUseCase: loginUseCase)
         let sut = LoginViewController.instantiate { coder in

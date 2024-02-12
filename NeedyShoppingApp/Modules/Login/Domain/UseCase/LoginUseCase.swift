@@ -14,7 +14,7 @@ final class LoginUseCase: LoginUseCaseProtocol {
         self.repository = repository
     }
 
-    func login(_ domainModel: LoginRequestDomainModel, completion: @escaping (Result<LoginResponseDomainModel, Error>) -> Void) {
+    func login(_ domainModel: LoginRequestDomainModel, completion: @escaping (Result<LoginResponseDomainModel?, Error>) -> Void) {
         repository.login(domainModel) { result in
             completion(result)
         }

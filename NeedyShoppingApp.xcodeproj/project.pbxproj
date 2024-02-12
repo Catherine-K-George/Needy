@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65FD40212B7A1261006D62A5 /* DataModelMappingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD40202B7A1261006D62A5 /* DataModelMappingProtocol.swift */; };
+		65FD40252B7A193C006D62A5 /* LoginResponseModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD40242B7A193C006D62A5 /* LoginResponseModelMapper.swift */; };
 		C105B11D2B72B87500F0BB0F /* HomeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B11C2B72B87500F0BB0F /* HomeServiceTests.swift */; };
 		C105B11F2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B11E2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift */; };
 		C105B1212B72C23000F0BB0F /* MockProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B1202B72C23000F0BB0F /* MockProductDetailViewModel.swift */; };
@@ -70,7 +71,7 @@
 		C14C725F2B4ED65300183A5A /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C725E2B4ED65200183A5A /* NetworkClientProtocol.swift */; };
 		C14C72632B4ED67800183A5A /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14C72612B4ED67800183A5A /* MockNetworkManager.swift */; };
 		C15E55992B70DDB900BC25DF /* LoginDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E55982B70DDB800BC25DF /* LoginDomainModel.swift */; };
-		C15E559C2B70DE0300BC25DF /* LoginDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E559B2B70DE0300BC25DF /* LoginDataMapper.swift */; };
+		C15E559C2B70DE0300BC25DF /* LoginRequestModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15E559B2B70DE0300BC25DF /* LoginRequestModelMapper.swift */; };
 		C166C92B2B4E626F00D9E3CF /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C166C92A2B4E626F00D9E3CF /* LoginViewModelTests.swift */; };
 		C166C9302B4E6ADC00D9E3CF /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19087CB2B4D14B000FBA493 /* LoginRequest.swift */; };
 		C166C9312B4E6ADF00D9E3CF /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19087CD2B4D14C300FBA493 /* LoginResponse.swift */; };
@@ -164,6 +165,7 @@
 
 /* Begin PBXFileReference section */
 		65FD40202B7A1261006D62A5 /* DataModelMappingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModelMappingProtocol.swift; sourceTree = "<group>"; };
+		65FD40242B7A193C006D62A5 /* LoginResponseModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModelMapper.swift; sourceTree = "<group>"; };
 		C105B11C2B72B87500F0BB0F /* HomeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTests.swift; sourceTree = "<group>"; };
 		C105B11E2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavouriteProductsRepository.swift; sourceTree = "<group>"; };
 		C105B1202B72C23000F0BB0F /* MockProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductDetailViewModel.swift; sourceTree = "<group>"; };
@@ -225,7 +227,7 @@
 		C14C725E2B4ED65200183A5A /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
 		C14C72612B4ED67800183A5A /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		C15E55982B70DDB800BC25DF /* LoginDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDomainModel.swift; sourceTree = "<group>"; };
-		C15E559B2B70DE0300BC25DF /* LoginDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataMapper.swift; sourceTree = "<group>"; };
+		C15E559B2B70DE0300BC25DF /* LoginRequestModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModelMapper.swift; sourceTree = "<group>"; };
 		C166C92A2B4E626F00D9E3CF /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		C166C9342B4E74BC00D9E3CF /* ProductViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModelTests.swift; sourceTree = "<group>"; };
 		C19087842B4D00F100FBA493 /* NeedyShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeedyShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -691,7 +693,8 @@
 		C15E559A2B70DDF200BC25DF /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
-				C15E559B2B70DE0300BC25DF /* LoginDataMapper.swift */,
+				C15E559B2B70DE0300BC25DF /* LoginRequestModelMapper.swift */,
+				65FD40242B7A193C006D62A5 /* LoginResponseModelMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -1209,6 +1212,7 @@
 				C135D63A2B4D4B73003D0D0E /* UITableView+Extension.swift in Sources */,
 				C135D63E2B4D5079003D0D0E /* StoryboardInstantiatable.swift in Sources */,
 				C19087D22B4D1A7F00FBA493 /* NetworkConstants.swift in Sources */,
+				65FD40252B7A193C006D62A5 /* LoginResponseModelMapper.swift in Sources */,
 				C19087CC2B4D14B000FBA493 /* LoginRequest.swift in Sources */,
 				C14C725F2B4ED65300183A5A /* NetworkClientProtocol.swift in Sources */,
 				C1B81C622B593E8000A5980B /* FavouritesViewModel.swift in Sources */,
@@ -1233,7 +1237,7 @@
 				C19087DE2B4D23AD00FBA493 /* HomeViewController.swift in Sources */,
 				C10C9A712B55716A00F1F7C5 /* ProductRepository.swift in Sources */,
 				C1AE17CD2B566C7B00E95A36 /* UIApplication+Extension.swift in Sources */,
-				C15E559C2B70DE0300BC25DF /* LoginDataMapper.swift in Sources */,
+				C15E559C2B70DE0300BC25DF /* LoginRequestModelMapper.swift in Sources */,
 				C1E2F8582B71EDC70034960E /* ServiceConfiguration.swift in Sources */,
 				C1B81BFF2B57B5A500A5980B /* FavouritesListView.swift in Sources */,
 				C1E2F87D2B725D8C0034960E /* ProductService.swift in Sources */,

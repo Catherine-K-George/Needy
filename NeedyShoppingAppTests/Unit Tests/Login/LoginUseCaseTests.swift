@@ -30,7 +30,7 @@ final class LoginUseCaseTests: XCTestCase {
         let request = LoginRequestDomainModel(username: username, password: password)
         loginUseCase.login(request) { result in
             if case .success(let response) = result {
-                XCTAssertEqual(response.token, expectedToken)
+                XCTAssertEqual(response?.token, expectedToken)
             }
         }
     }

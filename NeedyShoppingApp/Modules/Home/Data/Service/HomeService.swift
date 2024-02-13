@@ -13,9 +13,9 @@ protocol HomeServiceProtocol {
 
 final class HomeService: HomeServiceProtocol {
     private let networkManager: NetworkClientProtocol
-    private let serviceConfiguration: ServiceConfiguration
+    private let serviceConfiguration: ServiceConfigurationProtocol
 
-    init(networkManager: NetworkClientProtocol, serviceConfiguration: ServiceConfiguration) {
+    init(networkManager: NetworkClientProtocol, serviceConfiguration: ServiceConfigurationProtocol) {
         self.networkManager = networkManager
         self.serviceConfiguration = serviceConfiguration
     }

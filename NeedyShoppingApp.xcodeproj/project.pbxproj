@@ -11,6 +11,7 @@
 		65FD40252B7A193C006D62A5 /* LoginResponseModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD40242B7A193C006D62A5 /* LoginResponseModelMapper.swift */; };
 		65FD40282B7A1CB2006D62A5 /* ProductDomainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD40272B7A1CB2006D62A5 /* ProductDomainModel.swift */; };
 		65FD402B2B7A1D09006D62A5 /* ProductDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD402A2B7A1D09006D62A5 /* ProductDataMapper.swift */; };
+		65FD402D2B7BA859006D62A5 /* ServiceConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD402C2B7BA859006D62A5 /* ServiceConfigurationProtocol.swift */; };
 		C105B11D2B72B87500F0BB0F /* HomeServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B11C2B72B87500F0BB0F /* HomeServiceTests.swift */; };
 		C105B11F2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B11E2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift */; };
 		C105B1212B72C23000F0BB0F /* MockProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C105B1202B72C23000F0BB0F /* MockProductDetailViewModel.swift */; };
@@ -170,6 +171,7 @@
 		65FD40242B7A193C006D62A5 /* LoginResponseModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseModelMapper.swift; sourceTree = "<group>"; };
 		65FD40272B7A1CB2006D62A5 /* ProductDomainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDomainModel.swift; sourceTree = "<group>"; };
 		65FD402A2B7A1D09006D62A5 /* ProductDataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataMapper.swift; sourceTree = "<group>"; };
+		65FD402C2B7BA859006D62A5 /* ServiceConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfigurationProtocol.swift; sourceTree = "<group>"; };
 		C105B11C2B72B87500F0BB0F /* HomeServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTests.swift; sourceTree = "<group>"; };
 		C105B11E2B72BEAC00F0BB0F /* MockFavouriteProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavouriteProductsRepository.swift; sourceTree = "<group>"; };
 		C105B1202B72C23000F0BB0F /* MockProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductDetailViewModel.swift; sourceTree = "<group>"; };
@@ -667,6 +669,7 @@
 				C135D63D2B4D5079003D0D0E /* StoryboardInstantiatable.swift */,
 				C1AE17CA2B566C5100E95A36 /* ApplicationProtocol.swift */,
 				65FD40202B7A1261006D62A5 /* DataModelMappingProtocol.swift */,
+				65FD402C2B7BA859006D62A5 /* ServiceConfigurationProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1260,6 +1263,7 @@
 				65FD402B2B7A1D09006D62A5 /* ProductDataMapper.swift in Sources */,
 				C10C9A712B55716A00F1F7C5 /* ProductRepository.swift in Sources */,
 				C1AE17CD2B566C7B00E95A36 /* UIApplication+Extension.swift in Sources */,
+				65FD402D2B7BA859006D62A5 /* ServiceConfigurationProtocol.swift in Sources */,
 				C15E559C2B70DE0300BC25DF /* LoginRequestModelMapper.swift in Sources */,
 				C1E2F8582B71EDC70034960E /* ServiceConfiguration.swift in Sources */,
 				C1B81BFF2B57B5A500A5980B /* FavouritesListView.swift in Sources */,

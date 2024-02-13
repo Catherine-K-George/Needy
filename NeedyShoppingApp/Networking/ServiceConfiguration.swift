@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct ServiceConfiguration {
+struct ServiceConfiguration: ServiceConfigurationProtocol {
     let endpoint: String
 }

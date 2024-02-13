@@ -110,7 +110,6 @@
 		C1AE17D92B56AE2200E95A36 /* FavouritesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AE17D82B56AE2200E95A36 /* FavouritesViewControllerTests.swift */; };
 		C1AE17DB2B56AEF100E95A36 /* MockProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AE17DA2B56AEF100E95A36 /* MockProductViewModel.swift */; };
 		C1AE17DD2B56BB3100E95A36 /* ProductDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AE17DC2B56BB3100E95A36 /* ProductDetailViewControllerTests.swift */; };
-		C1B81BFB2B57A2EF00A5980B /* FavouritesSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81BFA2B57A2EF00A5980B /* FavouritesSwiftUIView.swift */; };
 		C1B81BFD2B57B53600A5980B /* ProductDetailUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81BFC2B57B53600A5980B /* ProductDetailUIKitView.swift */; };
 		C1B81BFF2B57B5A500A5980B /* FavouritesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81BFE2B57B5A500A5980B /* FavouritesListView.swift */; };
 		C1B81C012B57CD5000A5980B /* ProductListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81C002B57CD5000A5980B /* ProductListItemView.swift */; };
@@ -123,7 +122,7 @@
 		C1B81C602B592FE200A5980B /* ProductDetailViewControllerSnapShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81C5F2B592FE100A5980B /* ProductDetailViewControllerSnapShotTests.swift */; };
 		C1B81C622B593E8000A5980B /* FavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81C612B593E8000A5980B /* FavouritesViewModel.swift */; };
 		C1B81C652B59412E00A5980B /* MockFavouritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81C642B59412E00A5980B /* MockFavouritesViewModel.swift */; };
-		C1B81C682B5941CF00A5980B /* FavouritesSwiftUIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81C672B5941CF00A5980B /* FavouritesSwiftUIViewTests.swift */; };
+		C1B81C682B5941CF00A5980B /* FavouritesListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B81C672B5941CF00A5980B /* FavouritesListViewTests.swift */; };
 		C1E2F8582B71EDC70034960E /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2F8572B71EDC70034960E /* ServiceConfiguration.swift */; };
 		C1E2F85A2B7234260034960E /* MockLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E2F8592B7234260034960E /* MockLoginService.swift */; };
 		C1E2F85B2B7234B40034960E /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14261202B7150AE00D1E428 /* LoginService.swift */; };
@@ -269,7 +268,6 @@
 		C1AE17D82B56AE2200E95A36 /* FavouritesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewControllerTests.swift; sourceTree = "<group>"; };
 		C1AE17DA2B56AEF100E95A36 /* MockProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProductViewModel.swift; sourceTree = "<group>"; };
 		C1AE17DC2B56BB3100E95A36 /* ProductDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewControllerTests.swift; sourceTree = "<group>"; };
-		C1B81BFA2B57A2EF00A5980B /* FavouritesSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesSwiftUIView.swift; sourceTree = "<group>"; };
 		C1B81BFC2B57B53600A5980B /* ProductDetailUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailUIKitView.swift; sourceTree = "<group>"; };
 		C1B81BFE2B57B5A500A5980B /* FavouritesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListView.swift; sourceTree = "<group>"; };
 		C1B81C002B57CD5000A5980B /* ProductListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListItemView.swift; sourceTree = "<group>"; };
@@ -280,7 +278,7 @@
 		C1B81C5F2B592FE100A5980B /* ProductDetailViewControllerSnapShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewControllerSnapShotTests.swift; sourceTree = "<group>"; };
 		C1B81C612B593E8000A5980B /* FavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewModel.swift; sourceTree = "<group>"; };
 		C1B81C642B59412E00A5980B /* MockFavouritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavouritesViewModel.swift; sourceTree = "<group>"; };
-		C1B81C672B5941CF00A5980B /* FavouritesSwiftUIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesSwiftUIViewTests.swift; sourceTree = "<group>"; };
+		C1B81C672B5941CF00A5980B /* FavouritesListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesListViewTests.swift; sourceTree = "<group>"; };
 		C1E2F8572B71EDC70034960E /* ServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfiguration.swift; sourceTree = "<group>"; };
 		C1E2F8592B7234260034960E /* MockLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginService.swift; sourceTree = "<group>"; };
 		C1E2F85C2B7247380034960E /* LoginServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceTests.swift; sourceTree = "<group>"; };
@@ -760,7 +758,6 @@
 			isa = PBXGroup;
 			children = (
 				C19087DF2B4D244200FBA493 /* FavouritesViewController.swift */,
-				C1B81BFA2B57A2EF00A5980B /* FavouritesSwiftUIView.swift */,
 				C1B81BFE2B57B5A500A5980B /* FavouritesListView.swift */,
 			);
 			path = View;
@@ -945,7 +942,7 @@
 			isa = PBXGroup;
 			children = (
 				C1AE17D82B56AE2200E95A36 /* FavouritesViewControllerTests.swift */,
-				C1B81C672B5941CF00A5980B /* FavouritesSwiftUIViewTests.swift */,
+				C1B81C672B5941CF00A5980B /* FavouritesListViewTests.swift */,
 				C144A3A22B5A447200EBB266 /* FavouritesViewModelTests.swift */,
 				C105B1222B72C7DB00F0BB0F /* FavouriteProductsUseCaseTests.swift */,
 				C105B1242B72C9B400F0BB0F /* FavouriteProductRepositoryTests.swift */,
@@ -1257,7 +1254,6 @@
 				65FD40212B7A1261006D62A5 /* DataModelMappingProtocol.swift in Sources */,
 				C1E2F8622B724E6C0034960E /* FetchCategoriesUseCaseProtocol.swift in Sources */,
 				C10C9A642B554A7300F1F7C5 /* CategoriesRepository.swift in Sources */,
-				C1B81BFB2B57A2EF00A5980B /* FavouritesSwiftUIView.swift in Sources */,
 				C14261242B71622900D1E428 /* LoginRepositoryProtocol.swift in Sources */,
 				C19087DE2B4D23AD00FBA493 /* HomeViewController.swift in Sources */,
 				65FD402B2B7A1D09006D62A5 /* ProductDataMapper.swift in Sources */,
@@ -1325,7 +1321,7 @@
 				C1AE17C92B56669100E95A36 /* MockLoginViewModel.swift in Sources */,
 				C10C9A5D2B55422A00F1F7C5 /* MockLoginRepository.swift in Sources */,
 				C10C9A5B2B553C3300F1F7C5 /* LoginUseCaseTests.swift in Sources */,
-				C1B81C682B5941CF00A5980B /* FavouritesSwiftUIViewTests.swift in Sources */,
+				C1B81C682B5941CF00A5980B /* FavouritesListViewTests.swift in Sources */,
 				C10883402B55A6BF0006BED1 /* MockURLSession.swift in Sources */,
 				C1AE17DB2B56AEF100E95A36 /* MockProductViewModel.swift in Sources */,
 				C10883542B5646870006BED1 /* StoryboardInstantiatableTests.swift in Sources */,

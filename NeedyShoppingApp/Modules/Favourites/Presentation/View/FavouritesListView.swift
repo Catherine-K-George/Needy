@@ -8,8 +8,8 @@
 import SwiftUI
 import Kingfisher
 
-struct FavouritesListView: View {
-    var viewModel: FavouriteViewModelProtocol
+struct FavouritesListView<ViewModel>: View where ViewModel: FavouriteViewModelProtocol {
+    @ObservedObject var viewModel: ViewModel
 
     var body: some View {
         List(viewModel.products, id: \.self) { item in
@@ -20,6 +20,9 @@ struct FavouritesListView: View {
             .background(Color("lightGrayColor"))
             .padding(10)
             .listRowSeparator(.hidden)
+        }
+        .onAppear {
+            viewModel.fetchFavouriteProducts()
         }
         .listStyle(PlainListStyle())
         .navigationBarTitle(StringConstants.favouriteScreenTitle, displayMode: .inline)

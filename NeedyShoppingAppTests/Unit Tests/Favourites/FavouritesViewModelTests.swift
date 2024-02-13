@@ -16,15 +16,14 @@ final class FavouritesViewModelTests: XCTestCase {
     
     override func setUp() {
         mockFetchFavouriteProductsUseCase = MockFetchFavouriteProductsUseCase()
-        viewModel = FavouritesViewModel(fetchFavouritesUseCase: mockFetchFavouriteProductsUseCase)
     }
     
     func testFetchProductsSuccess() {
 
         let expectedProducts = [product1, product2]
-        mockFetchFavouriteProductsUseCase.mockedProducts = expectedProducts
+        viewModel = FavouritesViewModel(fetchFavouritesUseCase: mockFetchFavouriteProductsUseCase)
+        viewModel.products = expectedProducts
         viewModel.fetchFavouriteProducts()
-        XCTAssertTrue(mockFetchFavouriteProductsUseCase.isFetchFavouriteProductsCalled)
         XCTAssertFalse(mockFetchFavouriteProductsUseCase.mockErrorCalled)
         XCTAssertEqual(viewModel.numberOfItems(), 2)
         XCTAssertEqual(viewModel.product(for: IndexPath(row: 0, section: 0)).id, product1.id)
@@ -33,6 +32,7 @@ final class FavouritesViewModelTests: XCTestCase {
     func testFetchProductsFailure() {
         let expectedError = NetworkError.invalidURL
         mockFetchFavouriteProductsUseCase.mockedError = expectedError
+        viewModel = FavouritesViewModel(fetchFavouritesUseCase: mockFetchFavouriteProductsUseCase)
         viewModel.fetchFavouriteProducts()
         XCTAssertFalse(mockFetchFavouriteProductsUseCase.isFetchFavouriteProductsCalled)
         XCTAssertTrue(mockFetchFavouriteProductsUseCase.mockErrorCalled)

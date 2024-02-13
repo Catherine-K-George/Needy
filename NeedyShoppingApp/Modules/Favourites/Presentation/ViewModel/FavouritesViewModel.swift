@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol FavouriteViewModelProtocol {
+protocol FavouriteViewModelProtocol: ObservableObject {
     var products: [ProductDomainModel] { get set }
     func numberOfItems() -> Int
     func product(for indexPath: IndexPath) -> ProductDomainModel
@@ -37,7 +37,9 @@ extension FavouritesViewModel: FavouriteViewModelProtocol {
         fetchFavouritesUseCase.fetchFavouriteProducts { [weak self] result in
             switch result {
             case .success(let response):
-                self?.products = response
+                DispatchQueue.main.async {
+                    self?.products = response
+                }
             case .failure(let error):
                 print("Error: Unable to load favourites", error.localizedDescription)
             }

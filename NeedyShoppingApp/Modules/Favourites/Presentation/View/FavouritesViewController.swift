@@ -23,7 +23,7 @@ class FavouritesViewController: UIViewController, StoryboardInstantiatable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let hostingController = UIHostingController(rootView: FavouritesSwiftUIView(viewModel: favouritesViewModel))
+        let hostingController = UIHostingController(rootView: FavouritesListView(viewModel: self.favouritesViewModel))
 
         let navigationController = UINavigationController(rootViewController: hostingController)
         addChild(navigationController)
